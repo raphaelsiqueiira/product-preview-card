@@ -8,18 +8,19 @@
   <link rel="stylesheet" href="style.css">
 
   <title>Frontend Mentor | Product preview card component</title>
-</head>
 <body>
 
-  <div class="preview-card">
+  <main class="preview-card">
     <div class="image">
-      <img class="mobile" src="images/image-product-mobile.jpg" alt="">
-      <img class="desktop" src="./images/image-product-desktop.jpg" alt="">
+      <picture>
+        <source media= "(min-width: 40rem)" class="mobile" srcset="images/image-product-desktop.jpg" alt="">
+        <img class="desktop" src="./images/image-product-mobile.jpg" alt="">
+      </picture>
     </div>
 
     <div class="content">
       <div>
-        <h2>Perfume</h2>
+        <p class="product">Perfume</p>
         <h1>Gabrielle Essence Eau De Parfum</h1>
         <p class="text">
           A floral, solar and voluptuous interpretation composed by Olivier Polge,
@@ -27,7 +28,7 @@
         </p>
         <div class="prices">
           <p class="offerPrice">$149.99</p>
-          <p class="price">$169.99</p>
+          <p class="price"><del>$169.99</del></p>
         </div>
         <button>
           <img src="images/icon-cart.svg" alt="">
@@ -35,7 +36,7 @@
         </button>
       </div>
     </div>
-  </div>
+  </main>
   
   <footer class="attribution">
     <p>

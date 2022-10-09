@@ -81,7 +81,7 @@ h1{
     margin-block-end: 0.8em;
 }
 
-h2{
+p.product{
     font-family: "Montserrat", sans-serif;
     font-size: 12px;
     font-weight: 500;
@@ -120,7 +120,6 @@ p.price {
     font-family: "Montserrat", sans-serif;
     font-size: 12px;
     font-weight: 500;
-    text-decoration: line-through;
 
     color: var(--clr-blue-gray);
 
@@ -129,18 +128,16 @@ p.price {
     margin-inline-start: 1.5em;
 }
 
-img {
+img, source, picture {
     max-width: 100%;
+    height: 100%;
 }
 
-.content {
-    position: relative;
-}
-
-.content > div {
+.content  {
     margin: 2rem;
     height: calc(100% - 4rem);
     position: relative;
+
 }
 
 .preview-card {
@@ -176,12 +173,6 @@ footer{
 }
 
 @media (max-width: 40rem) {
-    .desktop {
-        display: none;
-    }
-    .mobile {
-        display: block;
-    }
 
     button {
         position: relative;
@@ -195,25 +186,16 @@ footer{
         margin: 1rem;
     }
 
-    .content > div {
+    .content {
         height: auto;
         margin: 1.5rem;
     }
 
-    h2, p.text {
+    p.product, p.text {
         max-width: none;
     }
 
     footer{
-        display: none;
-    }
-}
-
-@media (min-width: 40rem) {
-    .desktop {
-        display: block;
-    }
-    .mobile {
         display: none;
     }
 }
