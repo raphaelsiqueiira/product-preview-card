@@ -35,35 +35,6 @@ body {
   justify-content: center;
 }
 
-button {
-  color: var(--clr-white);
-  background-color: var(--clr-primary);
-  border-radius: 0.5rem;
-
-  width: 100%;
-  padding: 1em;
-  border: none;
-  font: 700 0.875em "Montserrat", sans-serif;
-  cursor: pointer;
-  margin-top: 20px;
-  transition: all 50ms ease-out;
-}
-
-button:hover,
-button:focus-visible {
-  background-color: var(--clr-primary-dark);
-}
-
-button:focus-visible {
-  outline: none;
-}
-
-button img {
-  display: inline;
-  margin-right: 10px;
-  vertical-align: bottom;
-}
-
 h1 {
   font: 700 2em/1.1 "Fraunces", serif;
 
@@ -111,6 +82,35 @@ p.price {
   margin-inline-start: 1.5em;
 }
 
+button {
+  color: var(--clr-white);
+  background-color: var(--clr-primary);
+  border-radius: 0.5rem;
+
+  width: 100%;
+  padding: 1em;
+  border: none;
+  font: 700 0.875em "Montserrat", sans-serif;
+  cursor: pointer;
+  margin-top: 20px;
+  transition: all 50ms ease-out;
+}
+
+button:hover,
+button:focus-visible {
+  background-color: var(--clr-primary-dark);
+}
+
+button:focus-visible {
+  outline: none;
+}
+
+button img {
+  display: inline;
+  margin-right: 10px;
+  vertical-align: bottom;
+}
+
 img,
 source,
 picture {
@@ -129,11 +129,9 @@ picture {
 
   width: 38rem;
   height: 50%;
-
   background-color: var(--clr-white);
   border-radius: 0.5rem;
   overflow: hidden;
-
   position: relative;
 }
 
